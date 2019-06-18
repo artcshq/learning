@@ -1,22 +1,22 @@
-'use strict';
+let money = prompt("Ваш бюджет на месяц?"),
+    time = prompt("Введите дату в формате YYYY-MM-DD");
 
+let appData = {
+    budget : money,
+    expenses:{},
+    optionalExpenses:{},
+    income:{},
+    savings:false,
+    timeData:time
+}
 
-console.log(a);
+let q1 = prompt("Введите обязательную статью расходов в этом месяце"),
+    q2 = prompt("Во сколько обойдется?"),
+    q3 = prompt("Введите обязательную статью расходов в этом месяце"),
+    q4 = prompt("Во сколько обойдется?");
 
-let person = {
-    name: 'John',
-    age: 25,
-    isMarried:false
-};
+appData.expenses.q1=q2;
+appData.expenses.q3=q4;
 
-
-
-let arr = ['plum.png','orange.jpg','apple.bmp'];
-
-
- 
-  let awnswer = +prompt("Are you here?");
-//  console.log(awnswer);
-console.log(typeof(awnswer));
-
- console.log(4+'-object');
+alert(appData.budget/30);
+console.log(appData.expenses);
